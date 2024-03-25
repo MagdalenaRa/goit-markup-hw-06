@@ -161,7 +161,7 @@ a {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.5;
+  /*line-height: 1.5;*/
   letter-spacing: 0.02em;
   color: #434455;
 }
@@ -209,7 +209,7 @@ a.address-list:hover {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/peopleoffice.jpg);
+    url(../images/peoplemobile1x.jpg);
   max-width: 320px;
 
   background-repeat: no-repeat;
@@ -403,15 +403,11 @@ a.address-list:hover {
 
 .text-section {
   font-weight: 500;
-  /*font-family: "Roboto", sans-serif;
-  font-weight: 500;
+  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 150%;
   letter-spacing: 0.02em;
-  color: #434455;
-  line-height: 1.5;
-  text-align: start;
-  */
+  color: var(--slate);
 }
 
 .logo-end {
@@ -432,6 +428,11 @@ a.address-list:hover {
   display: block;
   flex-wrap: wrap;
   width: 100%;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
 }
 
 .footer-section {
@@ -514,6 +515,7 @@ section {
 }
 
 .worker-text {
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -608,7 +610,7 @@ img {
   text-align: center;
   text-transform: capitalize;
   color: #2e2f42;
-  display: flex;
+  /*display: flex; */
   justify-content: center;
   margin-bottom: 72px;
 }
@@ -1051,6 +1053,14 @@ img {
   pointer-events: none;
 }
 
+.team-header {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
 @media (min-width: 768px) {
   .container {
     max-width: 768px;
@@ -1068,7 +1078,7 @@ img {
   */
   .address {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 12px;
     justify-content: flex-end;
   }
@@ -1104,7 +1114,7 @@ img {
   .menu-hamburger,
   .menu-icon-ham {
     opacity: 0;
-    visibility: hidden;
+    display: none;
     pointer-events: none;
   }
 
@@ -1113,7 +1123,7 @@ img {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/peopletablet2x.jpg);
+      url(../images/heroimage-768.jpg);
     max-width: 768px;
     padding: 112px 0;
   }
@@ -1152,6 +1162,14 @@ img {
     margin: 0 auto;
     column-gap: 24px;
     row-gap: 64px;
+  }
+
+  .list-section {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    text-align: left;
   }
 
   /* .worker-list {
@@ -1249,7 +1267,7 @@ img {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/peopletablet2x.jpg);
+      url(../images/heroimage-tablet768.jpg);
   }
 }
 
@@ -1288,7 +1306,9 @@ img {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/peopleoffice.jpg);
+      url(../images/peopleoffice-desktop.jpg);
+    max-width: 1440px;
+    padding: 188px 0;
   }
 
   .second-section {
@@ -1380,6 +1400,6 @@ img {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/peopleoffice.jpg);
+      url(../images/peopleofficedesktop2x.jpg);
   }
 }
